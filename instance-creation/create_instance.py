@@ -23,17 +23,12 @@ OS_TENANT_NAME = os.environ.get('OS_TENANT_NAME') or 'admin'
 OS_PROJECT_DOMAIN_NAME = os.environ.get('OS_PROJECT_DOMAIN_NAME') or 'Default'
 OS_USER_DOMAIN_NAME = os.environ.get('OS_USER_DOMAIN_NAME') or 'Default'
 
-# INSTANCE_NAME = os.environ.get('INSTANCE_NAME') or \
-#                 'touchstone-server-%s' % time.strftime('%d-%m-%Y-%H%M%S')
-SNAPSHOT_NAME = os.environ.get('SNAPSHOT_NAME') or \
-                'touchstone-server-snapshot-%s' % \
-                time.strftime('%d-%m-%Y-%H%M%S')
-SOURCE_IMAGE_NAME = os.environ.get('SOURCE_IMAGE_NAME') or ''
-FLAVOR_NAME = os.environ.get('FLAVOR_NAME') or 'touchstone-flavor-small'
 NETWORK_NAME = os.environ.get('NETWORK_NAME') or 'private'
 
 USER = os.environ.get('SSH_USER') or 'root'
 SSH_PASSWORD = os.environ.get('SSH_PASSWORD') or ''
+
+
 SSH_KEY = os.environ.get('SSH_KEY') or None
 
 SSH_WAIT_TIME = int(os.environ.get('SSH_WAIT_TIME') or 120)
