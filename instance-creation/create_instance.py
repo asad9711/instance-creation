@@ -10,8 +10,6 @@ from keystoneauth1 import loading, session
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-DEFAULT_IMAGE = 'voereir_ubuntu'
-DEFAULT_FLAVOR = 'touchstone-flavor'
 DEFAULT_SEC_GRPS = ['default']
 DEFAULT_NETWORK_ID = 'privatenew'
 DEFAULT_INSTANCE_NAME = 'temp-instance'
@@ -139,15 +137,6 @@ def to_wait_for_ssh(command_to_execute=None, **ssh_credentials):
 
 
 if __name__ == '__main__':
-    # instance = create_instance(flavor_name=DEFAULT_FLAVOR, image_name=DEFAULT_IMAGE, security_groups=DEFAULT_SEC_GRPS,
-    #                            network_id=DEFAULT_NETWORK_ID)
-#      now add floating ip to this instance
-#     add_floating_ip(instance)
-
-
-    # with open('/Users/asadhussain/touchstone/touchstone-engine/ve_engines/orchestrator/resources/touchstone_key', 'r') as f:
-    #     data =  f.read()
-    #     pass
 
     pkey_contents = ""
 
